@@ -12,33 +12,21 @@
       justify-content: center;
       align-items: center;
       background: #000;
-      font-family: "Amiri", serif; /* خط عربي فخم */
+      font-family: "Amiri", serif; /* خط عربي جميل */
       color: #fff;
-      overflow: hidden;
     }
 
     .quote {
-      font-size: 2.5rem;
+      font-size: 1.2rem; /* صغير وبسيط */
       text-align: center;
-      padding: 20px;
-      text-shadow: 0 0 10px #fff, 0 0 20px #aaa;
-      animation: glow 3s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #888, 0 0 30px #666;
-      }
-      to {
-        text-shadow: 0 0 20px #fff, 0 0 40px #aaa, 0 0 60px #999;
-      }
+      white-space: nowrap;
     }
   </style>
 </head>
 <body>
   <div class="quote">هل أنا المجنون أم الآخرين؟</div>
 
-  <!-- مشغل موسيقى -->
+  <!-- موسيقى (اختياري) -->
   <audio autoplay loop>
     <source src="music.mp3" type="audio/mpeg">
   </audio>
