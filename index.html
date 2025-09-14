@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<title>يومي</title>
-<style>
-body { background-color: black; color: white; font-family: Arial; padding: 20px; }
-h1 { text-align: center; }
-p { margin-bottom: 10px; font-size: 18px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مقولة</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #000000);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .quote {
+      font-size: 2rem;
+      text-align: center;
+      max-width: 80%;
+      line-height: 1.8;
+      letter-spacing: 2px;
+      border-right: 2px solid #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 6s steps(40, end), blink 0.8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0%, 50% { border-color: transparent; }
+      51%, 100% { border-color: white; }
+    }
+  </style>
 </head>
 <body>
-
-<h1>يومي الصغير</h1>
-<div id="entries">
-  <p>الووووو</p>
-  <p>الموقع شغال؟</p>
-</div>
-
+  <div class="quote">هل أنا المجنون أم الآخرين؟</div>
 </body>
 </html>
