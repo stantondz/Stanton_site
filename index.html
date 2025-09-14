@@ -11,38 +11,36 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #000000);
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
+      background: #000;
+      font-family: "Amiri", serif; /* خط عربي فخم */
+      color: #fff;
       overflow: hidden;
     }
 
     .quote {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
-      max-width: 80%;
-      line-height: 1.8;
-      letter-spacing: 2px;
-      border-right: 2px solid #ffffff;
-      white-space: nowrap;
-      overflow: hidden;
-      direction: rtl;              /* اتجاه عربي */
-      unicode-bidi: bidi-override; /* يفرض عرض صحيح */
-      animation: typing 6s steps(40, end), blink 0.8s infinite;
+      padding: 20px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #aaa;
+      animation: glow 3s ease-in-out infinite alternate;
     }
 
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-
-    @keyframes blink {
-      0%, 50% { border-color: transparent; }
-      51%, 100% { border-color: white; }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #888, 0 0 30px #666;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 40px #aaa, 0 0 60px #999;
+      }
     }
   </style>
 </head>
 <body>
   <div class="quote">هل أنا المجنون أم الآخرين؟</div>
+
+  <!-- مشغل موسيقى -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
