@@ -11,7 +11,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #000000);
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #000000);
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #ffffff;
       overflow: hidden;
@@ -26,6 +26,8 @@
       border-right: 2px solid #ffffff;
       white-space: nowrap;
       overflow: hidden;
+      direction: rtl;              /* اتجاه عربي */
+      unicode-bidi: bidi-override; /* يفرض عرض صحيح */
       animation: typing 6s steps(40, end), blink 0.8s infinite;
     }
 
